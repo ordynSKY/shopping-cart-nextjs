@@ -2,18 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 import { toast } from "react-toastify";
 import { cartItemType, cartTotalType } from "@/types";
 
-if (typeof window !== "undefined") {
-    console.log("You are on the browser");
-    // 👉️ can use localStorage here
-
-    localStorage.setItem("name", "Tom");
-
-    console.log(localStorage.getItem("name")); // 👉️ "Tom"
-} else {
-    console.log("You are on the server");
-    // 👉️ can't use localStorage
-}
-
 const getStorLocal = (item: string) => {
     if (typeof window !== "undefined") {
         return localStorage.getItem(item);
