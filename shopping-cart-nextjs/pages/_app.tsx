@@ -2,6 +2,9 @@ import "@/styles/globals.css";
 import { Provider } from "react-redux";
 import type { AppProps } from "next/app";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "@redux-saga/core";
 import cartReducer, { getTotal } from "@/slices/cartSlice";
@@ -27,6 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <Provider store={store}>
             <Component {...pageProps} />
+            <ToastContainer />
         </Provider>
     );
 }
