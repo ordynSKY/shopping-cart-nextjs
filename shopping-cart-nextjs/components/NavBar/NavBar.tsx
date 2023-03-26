@@ -13,7 +13,7 @@ const NavBar = () => {
                 <Link href="/">
                     <h2>React Shop</h2>
                 </Link>
-                {/* <Link href="/cart">
+                <Link href="/cart">
                     <div className={styles.cartIcon}>
                         {cartSvg}
                         <span className={styles.cartQuantity}>
@@ -22,7 +22,7 @@ const NavBar = () => {
                             </span>
                         </span>
                     </div>
-                </Link> */}
+                </Link>
             </nav>
         </>
     );

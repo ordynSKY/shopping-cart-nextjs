@@ -49,7 +49,7 @@ const CartPage = () => {
                         <div className={styles.startShopping}>
                             <Link href="/">
                                 {arrowLeft}
-                                {/* <span>&nbsp;Back to the shop</span> */}
+                                <span>&nbsp;Back to the shop</span>
                             </Link>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ const CartPage = () => {
                                             width={100}
                                             height={136}
                                         />
-                                        {/* <div>
+                                        <div>
                                             <h3>{cartItem.name}</h3>
                                             <p>{cartItem.desc}</p>
                                             <button
@@ -83,7 +83,7 @@ const CartPage = () => {
                                             >
                                                 Remove
                                             </button>
-                                        </div> */}
+                                        </div>
                                     </div>
                                     <div className={styles.productPrice}>
                                         {cartItem.price}$
@@ -124,17 +124,17 @@ const CartPage = () => {
                             </button>
                             <div className={styles.checkout}>
                                 <div className={styles.subtotal}>
-                                    {/* <span>Subtotal</span>
+                                    <span>Subtotal</span>
                                     <span className={styles.amount}>
                                         {cart.cartTotalAmount}$
-                                    </span> */}
+                                    </span>
                                 </div>
                                 <p>Taxes and shipping calculated at checkout</p>
                                 <button>{checkoutSvg}&nbsp; CheckOut</button>
                                 <div className={styles.continueShopping}>
                                     <Link href="/">
                                         {arrowLeft}
-                                        {/* <span>&nbsp;Continue shopping</span> */}
+                                        <span>&nbsp;Continue shopping</span>
                                     </Link>
                                 </div>
                             </div>
