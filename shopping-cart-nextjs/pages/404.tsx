@@ -21,10 +21,10 @@ const NotFound = () => {
     return (
         <>
             <NavBar />
-            <div>
+            <NotFound>
                 <h2>404</h2>
                 <p>Page not found</p>
-            </div>
+            </NotFound>
         </>
     );
 };
