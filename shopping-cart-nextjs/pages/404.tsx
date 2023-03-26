@@ -1,6 +1,4 @@
-import Head from "next/head";
 import NavBar from "@/components/NavBar/NavBar";
-import styles from "@/styles/NotFound.module.css";
 import styled from "styled-components";
 
 const NotFound = () => {
@@ -11,6 +9,13 @@ const NotFound = () => {
         justify-content: center;
         color: #a9a9a9;
         min-height: 80vh;
+        h2 {
+            font-size: 55px;
+        }
+
+        p {
+            font-size: 20px;
+        }
     `;
 
     return (

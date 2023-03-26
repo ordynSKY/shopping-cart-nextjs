@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import NavBar from "@/components/NavBar/NavBar";
 import { useEffect } from "react";
@@ -8,8 +7,8 @@ import { useRouter } from "next/router";
 import { addToCart } from "@/slices/cartSlice";
 import { getProducts } from "@/slices/productsSlice";
 import { product, stateType } from "@/types";
-import styles from "@/styles/Home.module.css";
 import Products from "@/components/Products/Products";
+import styled from "styled-components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +28,22 @@ export default function Home() {
         dispatch(getProducts());
     }, [dispatch]);
 
+    const Container = styled.div`
+        padding: 2rem 4rem;
+        h2 {
+            font-size: 40px;
+            font-weight: 400;
+            text-align: center;
+        }
+    `;
+
+    const Items = styled.div`
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    `;
+
     return (
         <>
             <Head>
@@ -46,10 +61,10 @@ export default function Home() {
 
             <NavBar />
 
-            <div className={styles.container}>
+            <Container>
                 <>
                     <h2>Our products</h2>
-                    <div className={styles.items}>
+                    <Items>
                         {products?.map((product: product) => (
                             <div key={product.id}>
                                 <Products
@@ -58,9 +73,9 @@ export default function Home() {
                                 />
                             </div>
                         ))}
-                    </div>
+                    </Items>
                 </>
-            </div>
+            </Container>
         </>
     );
 }
