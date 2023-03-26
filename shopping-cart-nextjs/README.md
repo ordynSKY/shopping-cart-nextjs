@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React shop
+
+Product catalog with the ability to add them to the cart
+
+![ezgif-2-e89177b59c](https://user-images.githubusercontent.com/104451570/226122606-51a4dbc9-22ba-4fba-b593-c9500ddc8749.gif)
 
 ## Getting Started
 
@@ -14,25 +18,26 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Description
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### What was done:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1) Next.js, TypeScript, Redux Toolkit, Saga were used.
+2) A Node.js server with a list of products was developed.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To start the server, you need to install all dependencies from the backend folder and enter the command:
 
-## Learn More
+### `npx nodemon`
 
-To learn more about Next.js, take a look at the following resources:
+4) The Redux Toolkit was used to store project states.
+5) The functionality of adding and removing products from the cart with the possibility of changing the number of products was developed.
+6) Lists of products with names, prices and quantities were displayed.
+7) Data validation was developed when adding a products to the cart.
+8) The function of displaying the sum of all products in the cart was implemented.
+9) The functionality of adding and removing products from the cart with validation was implemented.
+10) Saga was used for asynchronous operations.
+11) An accessible site has been developed.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### What was done additionally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1) The function of saving the state of the shopping cart between user sessions using local storage was implemented.
