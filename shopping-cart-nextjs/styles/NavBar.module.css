@@ -1,0 +1,39 @@
+.navbar {
+    height: 70px;
+    background-color: #00bfff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.navbar h2 {
+    color: white;
+    font-size: 40px;
+}
+
+@media (max-width: 375px) {
+    .navbar h2 {
+        font-size: 30px;
+    }
+}
+
+.cartIcon {
+    display: flex;
+    align-items: flex-start;
+    color: white;
+}
+
+.cartQuantity {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+    background-color: #f15656;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    margin-left: 5px;
+}
